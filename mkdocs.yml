@@ -1,0 +1,155 @@
+site_name: Lords Of Incartum Wiki
+site_url: https://lust-interactive.github.io/LordsOfIncartum_Wiki/
+repo_url: https://github.com/lust-interactive/LordsOfIncartum_Wiki/
+repo_name: lust-interactive/LordsOfIncartum_Wiki
+site_description: Lords Of Incartum Wiki
+site_author: Lust Interactive Ltd
+copyright: Copyright(c) Lust Interactive Ltd, 2023
+docs_dir: data
+site_dir: _site/
+
+nav:
+    - Wiki Home: index.md
+    - Game Roadmap: gameroadmap.md
+    - Classes:
+      - Shade: class/shade.md
+    - Locations:
+      - Tutorial: locations/tutorial.md
+#      - Mysteria: locations/mysteria.md
+#      - Event Locations: locations/events.md
+#    - Mechanics:
+#      - Achievements: mechanics/achievements.md
+#      - Alliance: mechanics/alliance.md
+#      - Attributes: mechanics/attributes.md
+#      - Battlegrounds: mechanics/battlegrounds.md
+#      - Combat: mechanics/combat.md
+#      - Crafting: mechanics/crafting.md
+#      - Currency: mechanics/currency.md
+#      - Enchanting: mechanics/enchanting.md
+#      - Equipment: mechanics/equipment.md
+#      - Factions: mechanics/factions.md
+#      - Familiars: mechanics/familiars.md
+#      - Gathering: mechanics/gathering.md
+#      - Guilds: mechanics/guilds.md
+#      - Instanced Dungeons: mechanics/instances.md
+#      - Items: mechanics/items.md
+#      - Levelling: mechanics/levelling.md
+#      - Mounts: mechanics/mounts.md
+#      - Nature: mechanics/nature.md
+#      - Portals: mechanics/portals.md
+#      - Premium: mechanics/premium.md
+#      - Quests: mechanics/quests.md
+#      - Recruit a Friend: mechanics/recruitafriend.md
+#      - Skills: mechanics/skills.md
+#    - Professions:
+#      - Alchemist: professions/alchemist.md
+#      - Blacksmith: professions/blacksmith.md
+#      - Carpenter: professions/carpenter.md
+#      - Cook: professions/cook.md
+#      - Enchanter: professions/enchanter.md
+#      - Engineer: professions/engineer.md
+#      - Jeweler: professions/jeweler.md
+#      - Leatherworker: professions/leatherworker.md
+#      - Tailor: professions/tailor.md
+#      - Tinkerer: professions/tinkerer.md
+#    - Lust Universe:
+#      - Lore: lore.md
+#      - Recuring Characters: recuringcharacters.md
+    - Links:
+      - Lust Website: https://lustinteractive.co.uk/
+#      - Game Website Link: https://eternal-damnation.com/
+      - Contributing: CONTRIBUTING.md
+      - Discord: https://discord.gg/XN6YRfSMMt
+theme:
+  icon:
+    repo: fontawesome/brands/github-alt
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: img/favicon.ico
+  logo: img/eternal_damnation_nobg_500x500.png
+  name: material
+  features:
+    - announce.dismiss
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - content.tooltips
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: d9c349
+      accent: d9c349
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: d9c349
+      accent: d9c349
+extra:
+  social:
+    - icon: fontawesome/brands/wikipedia-w
+      link: https://lust-interactive.github.io/LordsOfIncartum_Wiki/
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/XN6YRfSMMt
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  - git-revision-date-localized:
+      type: timeago
+      fallback_to_build_date: true
+
+extra_css:
+  - stylesheets/extra.css
+extra_javascript:
+  - javascripts/smoothScrolling.js
