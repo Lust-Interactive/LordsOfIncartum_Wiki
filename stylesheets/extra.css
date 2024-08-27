@@ -1,0 +1,12 @@
+:root {
+	--md-primary-fg-color:        #7b241e;
+	--md-accent-fg-color:        #aa4942;
+  }
+
+.md-typeset a {
+	color: #d9c349
+}
+
+.md-typeset h1 {
+    color: #d9c349;
+}
